@@ -1,0 +1,73 @@
+  .card {
+      position: relative;
+      width: 386px;
+      padding: 16px;
+      margin-right: 40px;
+      transition: box-shadow 0.3 ease-in-out ;
+      cursor: pointer;
+      opacity: 1;
+    
+     img {
+      display: block;
+    }
+    
+    &:hover{
+      box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+      background: #ffffff;
+      opacity: 0.5;
+      color: #8D8F9A;
+      z-index: 99;
+      content: '';
+      transition: opacity 0.25s;
+    }
+  
+    h3{
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 400;
+      font-size: 24px;
+      right: 26%;
+      bottom: 233px;
+      width: 173px;
+      height: 39px;
+      color: #1d1d20;
+      text-transform: uppercase;
+      opacity: 0;
+      transition: opacity 0.25s;
+    }
+
+     h3:hover {
+      opacity: 1; 
+    }
+
+    .favorite {
+      position: absolute;
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+      right: 30px;
+      top: 30px;
+    }
+  
+    h5 {
+      font-weight: 300;
+      font-size: 18px;
+    }
+  
+    span {
+      font-weight: 500;
+      font-size: 18px;
+      color: #1D1F22;
+      margin-top: -18px;
+    }
+  }
+   .button {
+    position: absolute;
+    background: none;
+    border: none;
+    right: 20px;
+    bottom: 76px;
+    cursor: pointer;
+   }
